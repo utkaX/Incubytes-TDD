@@ -52,7 +52,12 @@ public class StringCalculatorTest
 	   assertEquals(7,sc.add("1001\n1\n2\n3\n1"));
    }
    
-   
+   @Test void LongDelimiters() {
+       assertEquals(6, sc.add("//[;;;]\n1;;;2;;;3"));
+       assertEquals(8, sc.add("//[***]\n1***2***4***1"));
+       assertEquals(26, sc.add("//[;;;][===]\n1;;;20===5"));
+       assertEquals(8, sc.add("//[***][;;][+++++]\n1***2+++++4;;1"));
+   }
    
    
 }
