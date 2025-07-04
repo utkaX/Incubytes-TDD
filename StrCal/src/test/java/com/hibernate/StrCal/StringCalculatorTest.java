@@ -59,5 +59,9 @@ public class StringCalculatorTest
        assertEquals(8, sc.add("//[***][;;][+++++]\n1***2+++++4;;1"));
    }
    
+   @Test void testEmptyCustomDelimiter() {
+       assertEquals(8, sc.add("//[]\n1241"));
+   }
+   
    
 }
