@@ -31,5 +31,12 @@ public class StringCalculatorTest
 	   assertEquals(19,sc.add("6\n4\n9"));
    }
    
+   @Test void TestCustomDelimiter() {
+	   assertEquals(3, sc.add("//;\n1;2"));
+	   assertEquals(6,sc.add("//\\t\\n1\\t2\\t3"));
+	   assertEquals(10,sc.add("//\"\n1\"2\"3\"4"));
+	   assertEquals(3,sc.add("//\\\n1\\2"));
+   }
+   
    
 }
