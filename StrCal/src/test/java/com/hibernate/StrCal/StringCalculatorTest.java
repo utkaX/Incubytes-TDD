@@ -13,4 +13,9 @@ public class StringCalculatorTest
    @Test void testEmptyStringReturnsZero() {
 	   assertEquals(0,sc.add(""));
    }
+   
+   @Test void testSingleNumber() {
+	   assertEquals(1,sc.add("1"));
+   }
+   
 }
