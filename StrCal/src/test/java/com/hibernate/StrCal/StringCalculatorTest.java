@@ -22,5 +22,11 @@ public class StringCalculatorTest
 	   assertEquals(6,sc.add("1,5"));
    }
    
+   @Test void testMultipleNumbers() {
+	   assertEquals(6,sc.add("1\n2,3"));
+   }
+   
+   @Test void 
+   
    
 }
