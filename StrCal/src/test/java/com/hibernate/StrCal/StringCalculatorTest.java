@@ -26,7 +26,10 @@ public class StringCalculatorTest
 	   assertEquals(6,sc.add("1\n2,3"));
    }
    
-   @Test void 
+   @Test void testNewLineOnly() {
+	   assertEquals(3,sc.add("1\n2"));
+	   assertEquals(19,sc.add("6\n4\n9"));
+   }
    
    
 }
