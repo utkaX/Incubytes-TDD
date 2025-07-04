@@ -18,4 +18,9 @@ public class StringCalculatorTest
 	   assertEquals(1,sc.add("1"));
    }
    
+   @Test void testTwoNumbers() {
+	   assertEquals(6,sc.add("1,5"));
+   }
+   
+   
 }
