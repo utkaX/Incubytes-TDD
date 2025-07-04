@@ -46,4 +46,13 @@ public class StringCalculatorTest
        assertEquals("Negative numbers not allowed: -7, -9, -10, -11", e2.getMessage());
    }
    
+   
+   @Test void testNumbersGreaterThan1000Ignored() {
+	   assertEquals(7,sc.add("1001,1,2,3,1"));
+	   assertEquals(7,sc.add("1001\n1\n2\n3\n1"));
+   }
+   
+   
+   
+   
 }
